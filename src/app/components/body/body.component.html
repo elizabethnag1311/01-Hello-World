@@ -1,0 +1,25 @@
+<div class="row">
+
+  <div class="col">
+    <h1>*ngIf</h1>
+    <hr>  
+      <div *ngIf="display" class="card mb-3" style="width:auto;">
+        <div class="card-body">
+          <h5 class="card-title">{{frase.author}}</h5>
+          <p class="card-text">{{frase.message}}</p>
+        </div>
+      </div>
+
+      <button (click)="display = !display" type="button" class="btn btn-outline-info d-grid gap-2 col-6 mx-auto">Display/Hide</button>
+
+  </div>
+  <div class="col">
+    <h1>*ngFor</h1>
+    <hr>
+
+    <ul class="list-group">
+      <li *ngFor="let cast of characters; let i= index" class="list-group-item">{{i + 1}} - {{cast}}</li>
+    </ul>    
+  </div>
+
+</div>

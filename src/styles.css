@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+footer {
+  color: rgb(0, 0, 0);
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.card{
+  background-color: rgb(193, 225, 237);
+}
+
+.list-group-item {
+  color: black;
+  background-color: rgb(193, 225, 237);
+}
+ 
